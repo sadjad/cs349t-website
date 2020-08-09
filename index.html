@@ -4,283 +4,167 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CS 144: Introduction to Computer Networking">
-    <title>CS 144: Introduction to Computer Networking</title>
+    <meta name="description" content="CS 349T: Video and Audio Technology for Live Theater in the Age of COVID">
+    <title>CS 349T: Video and Audio Technology for Live Theater in the Age of COVID</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="stanford.png">
+
+    <style>
+      .cem:after {
+        content: attr(data-x) "@" attr(data-y) "." attr(data-z); 
+      }
+    </style>
+
   </head>
 
   <body>
     <div class="container" role="main">
-      <h2><span class="text-muted">CS 144:</span> <wbr><span class="text-primary">Introduction to Computer Networking</span><span class="text-muted">,<wbr> Fall 2019</span></h2>
+      <h2><span class="text-muted">CS 349T:</span> <wbr><span class="text-primary">Video and Audio Technology for Live Theater in the Age of COVID</span><span class="text-muted">,<wbr> Autumn 2020</span></h2>
 
       <div class="progress">
         <div id="classprogress" class="progress-bar progress-bar-striped" role="progressbar"></div>
       </div>
 
       <div class="row">
-	<div class="page-header">
-	  <h3>Course info</h3>
-	</div>
+  <div class="page-header">
+    <h3>Course info</h3>
+  </div>
 
-	<div class="panel panel-primary">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">Course basics</h3>
-	  </div>
-	  <div class="panel-body">
-	    <div class="col-md-12">
-	      <table class="table">
-		<tr>
-		  <td style="border:none;"><span class="label label-default">Lectures</span></td><td style="border:none;">Monday, Wednesday, Friday, 2:30 p.m.&ndash;3:20 p.m. in
-		    <a href="https://campus-map.stanford.edu/?srch=320-105">room 320-105</a></td>
-		</tr>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Course basics</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-md-12">
+        <table class="table">
+    <tr>
+      <td style="border:none;"><span class="label label-default">Lectures</span></td><td style="border:none;">Thursday, 4:30 p.m.&ndash;5:50 p.m., remote synchronous</td>
+    </tr>
 
-		<tr><td><span class="label label-default">Lab sessions</span></td><td>Tuesday, 7:30 p.m.&ndash;10 p.m. in <a href="https://campus-map.stanford.edu/?srch=stlc114">STLC 114</a></td></tr>
+    <tr>
+      <td style="border:none;"><span class="label label-default">Prerequisites</span></td><td style="border:none;">CS 110 or EE 102A. Recommended: familiarity with Linux, C++, and Git.</td>
+    </tr>
+    
+    <tr>
+      <td style="border:none;"><span class="label label-default">Optional reading</span></td><td style="border:none;">Steiglitz, <i>"A Digital Signal Processing Primer: With Applications to Digital Audio and Computer Music,"</i> Sayood, <i>"Introduction to Data Compression,” Poynton, “Digital Video and HD Algorithms and Interfaces,"</i> Montgomery, <i>“A Digital Media Primer for Geeks” & “Digital Show & Tell”</i></td>
+    </tr>
 
-		<tr><td><span class="label label-default">Exams</span></td>
-		  <td><b>Midterm:</b> Wednesday, October 30. &nbsp; <b>Final:</b> Tuesday, December 10, 2019, 9&ndash;11 a.m. (Building 420, room 41)</td></tr>
+    <tr>
+      <td style="border:none;"><span class="label label-default">Course description</span></td><td style="border:none;">This class is part of a multi-disciplinary collaboration between researchers in the CS, EE, and TAPS departments to design and develop a system to host a live theatrical production that will take place over the Internet in the winter quarter. The performing arts have been greatly affected by a transition to theater over Zoom and its competitors, none of which are great at delivering low-latency audio to actors, or high-quality audio and video to the audience, or feedback from the audience back to actors. These are big technical challenges. During the fall, we’ll build a system that improves on current systems in certain areas: audio quality and latency over spotty Internet connections, video quality and realistic composited scenes with multiple actors, audience feedback, and perhaps digital puppetry. Students will learn to be part of a deadline-driven software development effort working to meet the needs of a theater director and creative specialists&mdash;while communicating the effect of resource limits and constraints to a nontechnical audience. This is an experimental hands-on laboratory class, and our direction may shift as the creative needs of the theatrical production evolve. Based on the success of class projects and subsequent needs, some students may be invited to continue in the winter term with a research appointment (for pay or credit) to operate the system you have built and instruct actors and creative professionals how to work with the system through rehearsals and the final performance before spring break.</a></td>
+    </tr>
+
+    <!--<tr><td><span class="label label-default">Lab sessions</span></td><td>Tuesday, 7:30 p.m.&ndash;10 p.m. in <a href="https://campus-map.stanford.edu/?srch=stlc114">STLC 114</a></td></tr>-->
+
+    <!--<tr><td><span class="label label-default">Exams</span></td>
+      <td><b>Midterm:</b> Wednesday, October 30. &nbsp; <b>Final:</b> Tuesday, December 10, 2019, 9&ndash;11 a.m. (Building 420, room 41)</td></tr>
         <tr><td></td>
           <td><a href="exams/cs144practicemidterm.pdf"><img src="images/pdf.png"> Practice midterm</a> <a href="exams/cs144practicemidtermans.pdf"><img src="images/pdf.png"> Answer key</a></td></tr>
         <tr><td></td>
-          <td><a href="exams/cs144-practice-final.pdf"><img src="images/pdf.png"> Practice final</a> <a href="exams/cs144-practice-final-answers.pdf"><img src="images/pdf.png"> Answer key</a></td></tr>
+          <td><a href="exams/cs144-practice-final.pdf"><img src="images/pdf.png"> Practice final</a> <a href="exams/cs144-practice-final-answers.pdf"><img src="images/pdf.png"> Answer key</a></td></tr>-->
 
-		<tr><td><span class="label label-default">Contact</span></td><td>
-To contact the course staff, please feel free to use <a href="https://piazza.com/stanford/fall2019/cs144">Piazza</a>, the lab sessions, or office hours. For private matters or accommodation letters, please email the instructors (cs144-aut1920-staff@lists.stanford.edu).</td></tr>
-		<tr><td><span class="label label-default">Syllabus/logistics</span></td><td><a href="logistics.pdf"><img src="images/pdf.png"> Syllabus/logistics handout</a></td></tr>
-		<tr><td><span class="label label-default">Piazza</span></td><td>
-		    <a href="https://piazza.com/stanford/fall2019/cs144">CS144 on Piazza</a></td></tr>
-		<tr><td><span class="label label-default">QueueStatus</span></td><td><a href="https://queuestatus.com/queues/524">QueueStatus (for office hours)</a></td></tr>
-        <tr><td><span class="label label-default">Attendance</span></td><td><a href="https://forms.gle/m87Z2xBRwRhshSus9">Attendance Form</a></td></tr>
-	      </table>
-	    </div>
-	  </div>
-	</div>
+    <!--<tr><td><span class="label label-default">Contact</span></td><td>
+To contact the course staff, please feel free to use <a href="https://piazza.com/stanford/fall2019/cs144">Piazza</a>, the lab sessions, or office hours. For private matters or accommodation letters, please email the instructors (cs144-aut1920-staff@lists.stanford.edu).</td></tr>-->
+    <!--<tr><td><span class="label label-default">Syllabus/logistics</span></td><td><a href="logistics.pdf"><img src="images/pdf.png"> Syllabus/logistics handout</a></td></tr>
+    <tr><td><span class="label label-default">Piazza</span></td><td>
+        <a href="https://piazza.com/stanford/fall2019/cs144">CS144 on Piazza</a></td></tr>
+    <tr><td><span class="label label-default">QueueStatus</span></td><td><a href="https://queuestatus.com/queues/524">QueueStatus (for office hours)</a></td></tr>
+        <tr><td><span class="label label-default">Attendance</span></td><td><a href="https://forms.gle/m87Z2xBRwRhshSus9">Attendance Form</a></td></tr>-->
+        </table>
+      </div>
+    </div>
+  </div>
 
-	<div class="panel panel-info">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">Lecturers</h3>
-	  </div>
-	  <div class="panel-body">
-	    <div class="col-md-6">
-	      <p>Keith Winstein</p>
-
-	      <p><span class="text-muted">Email:</span> <img alt="Winstein email address" src="images/keithw-email.svg"><br>
-	      <span class="text-muted">Office hours:</span> <i>in lab session</i></p>
-	    </div>
-	    <div class="col-md-6">
-	      <p>Nick McKeown</p>
-	      <p><span class="text-muted">Email:</span> <img alt="McKeown email address" src="images/nickm-email.svg"><br>
-	      <span class="text-muted">Office hours:</span> <i>Monday 4:30-5:30pm in Gates 344</i> </p>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="panel panel-success">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">Course Assistants</h3>
-	  </div>
-	  <div class="panel-body">
-	    <div class="col-md-4">
-	      <p>Sarah Tollman <span class="label label-info">head CA</span> <br>
-	      <span class="text-muted">Email: stollman <i>at</i> stanford </span></p>
-	    </div>
-	    <div class="col-md-4">
-	      <p>Nicholas Hirning <br>
-	      <span class="text-muted">Email: nhirning <i>at</i> stanford </span></p>
-	    </div>
-	   	<div class="col-md-4">
-	      <p>Alex Ozdemir<br>
-	      <span class="text-muted">Email: aozdemir <i>at</i> stanford </span></p>
-	    </div>
-	    <div class="col-md-4">
-	      <p>William Zhuk<br>
-	      <span class="text-muted">Email: waz <i>at</i> stanford </span></p>
-	    </div>
-	    <div class="col-md-4">
-	      <p>Sadjad Fouladi<br>
-	      <span class="text-muted">Email: sadjad <i>at</i> cs.stanford </span></p>
-	    </div>
-	    <div class="col-md-4">
-	      <p>Emily Marx <br>
-	      <span class="text-muted">Email: emarx1 <i>at</i> stanford </span></p>
-	    </div>
-	  </div>
-	</div>
-
-      <div class="panel panel-default">
-	<div class="panel-heading">
-	  <h3 class="panel-title">Video Weeks and Online Quizzes</h3>
-	</div>
-	<div class="panel-body">
-	  <div class="row">
-	  <ul>
-	    <li><b>Week 1, due Sept. 30 before class</b>
-	      <ul>
-		<li><a href="https://suclass.stanford.edu/courses/course-v1:Engineering+CS-144+Fall2019/course/">Honor Code video & quiz</a>
-		<li><a href="https://suclass.stanford.edu/courses/course-v1:Engineering+CS-144+Fall2019/course/">The Internet and IP</a>
-	      </ul>
-        <li><b>Week 3, due Oct. 11 before class</b>
-          <ul>
-        <li><a href="https://suclass.stanford.edu/courses/course-v1:Engineering+CS-144+Fall2019/course/">Simple Deterministic Queue Model</a>
-        <li><a href="https://suclass.stanford.edu/courses/course-v1:Engineering+CS-144+Fall2019/course/">Queueing Model Properties</a>
-        <li><a href="https://suclass.stanford.edu/courses/course-v1:Engineering+CS-144+Fall2019/course/">Rate Guarantees</a>
-          </ul>
-	    <li><b>Week 5, due Oct. 29 before class</b>
-        <ul>
-        <li><a href="https://suclass.stanford.edu/courses/course-v1:Engineering+CS-144+Fall2019/course/">Routing</a>
-          </ul>
-	  </ul>
-	  <div class="col-md-12"><i>Please note: videos have moved to <a href="https://suclass.stanford.edu/courses/course-v1:Engineering+CS-144+Fall2019/course/">SUclass</a>, which also hosts the completion quizzes, but are the same videos posted here originally.</i></div>
-	  </div>
-	</div>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Lecturers</h3>
+    </div>
+    <div class="panel-body">      
+      <div class="col-md-6">
+        <p>Sadjad Fouladi
+          <br><span class="text-muted">Email:</span> <span class="cem" data-x="sadjad" data-y="cs.stanford" data-z="edu"></p><br>
+      </div>
+      
+      <div class="col-md-6">
+        <p>Tsachy Weissman
+          <br><span class="text-muted">Email:</span> <span class="cem" data-x="tsachy" data-y="stanford" data-z="edu"></span></p><br>
       </div>
 
-      <div class="panel panel-warning">
-	<div class="panel-heading">
-	  <h3 class="panel-title">Lab Assignments</h3>
-	</div>
-	<div class="panel-body">
-          <span class="label label-default">FAQ</span> <a href="lab_faq.html">Answers to common questions about lab assignments.</a><p>
-
-	  <div class="row mx-auto" style="height: 32px;">
-	  </div>
-
-	  <div class="row">
-	    <div class="col-md-5"><a href="assignments/lab0.pdf"><img src="images/pdf.png"> Lab 0: networking warmup</a></div><div class="col-md-4">Out: Sept. 23, due <b>Sept. 30, 5 p.m.</b></div> <div class="col-md-3"><a href="https://github.com/cs144/sponge">Code</a> | <a href="doc/lab0/index.html">Documentation</a></div>
-	  </div>
-
-	  <div class="row mx-auto" style="height: 32px;">
-	  </div>
-
-	  <div class="row">
-	    <div class="col-md-5"><a href="assignments/lab1.pdf"><img src="images/pdf.png"> Lab 1: stitching substrings into a byte stream</a></div> <div class="col-md-4">Out: Sept. 24, due <b>Oct. 4, 5 p.m.</b></div> <div class="col-md-3"><a href="https://github.com/CS144/sponge/tree/lab1-startercode">Code</a> | <a href="doc/lab1/index.html">Documentation</a></div>
-	  </div>
-	  <div class="row mx-auto" style="height: 32px;">
-	  </div>
-
-	  <div class="row">
-	    <div class="col-md-5"><a href="assignments/lab2.pdf"><img src="images/pdf.png"> Lab 2: the TCP receiver</a></div> <div class="col-md-4">Out: Oct. 4, due <b>Oct. 11, 5 p.m.</b></div> <div class="col-md-3"><a href="https://github.com/CS144/sponge/tree/lab2-startercode">Code</a> | <a href="doc/lab2/index.html">Documentation</a></div>
-	  </div>
-
-	  <div class="row mx-auto" style="height: 32px;">
-	  </div>
-
-	  <div class="row">
-	    <div class="col-md-5"><a href="assignments/lab3.pdf"><img src="images/pdf.png"> Lab 3: the TCP sender</a></div> <div class="col-md-4">Out: Oct. 11, due <span class="text text-muted"><strike>Oct. 18</strike></span> <b>Oct. 23, 5 p.m.</b></div> <div class="col-md-3"><a href="https://github.com/CS144/sponge/tree/lab3-startercode">Code</a> | <a href="doc/lab3/index.html">Documentation</a></div>
-	  </div>
-
-	  <div class="row mx-auto" style="height: 32px;">
-	  </div>
-
-	  <div class="row">
-	    <div class="col-md-5"><a href="assignments/lab4.pdf"><img src="images/pdf.png"> Lab 4: the TCP connection</a></div> <div class="col-md-4">Out: Oct. 23, due <b>Nov. 6, 5 p.m.</b></div> <div class="col-md-3"><a href="https://github.com/CS144/sponge/tree/lab4-startercode">Code</a> | <a href="doc/lab4/index.html">Documentation</a></div>
-	  </div>
-
-	  <div class="row mx-auto" style="height: 32px;">
-	  </div>
-
-	  <div class="row">
-	    <div class="col-md-5"><a href="assignments/lab5.pdf"><img src="images/pdf.png"> Lab 5: the network interface</a></div> <div class="col-md-4">Out: Nov. 16, due <b>Dec. 4, 5 p.m.</b> (extra credit if handed in before <b>Nov. 22, 5 p.m.</b>)</div> <div class="col-md-3"><a href="https://github.com/CS144/sponge/tree/lab5-startercode">Code</a> | <a href="doc/lab5/index.html">Documentation</a></div>
-	  </div>
-
-	  <div class="row mx-auto" style="height: 32px;">
-	  </div>
-
-	  <div class="row">
-	    <div class="col-md-5"><a href="assignments/lab6.pdf"><img src="images/pdf.png"> Lab 6: the IP router</a></div> <div class="col-md-4">Out: Dec. 3, due <b>Dec. 6, 11 p.m.</b></div> <div class="col-md-3"><a href="https://github.com/CS144/sponge/tree/lab6-startercode">Code</a> | <a href="doc/lab6/index.html">Documentation</a></div>
-	  </div>
-	</div>
+      <div class="col-md-6">
+        <p>Keith Winstein
+          <br><span class="text-muted">Email:</span> <span class="cem" data-x="keithw" data-y="cs.stanford" data-z="edu"></p>
       </div>
 
-      <div class="panel panel-danger">
-	<div class="panel-heading">
-	  <h3 class="panel-title">Lecture Notes</h3>
-	</div>
-	<div class="panel-body">
-	  <div class="row">
-	    <div class="col-md-1"><span class="label label-default">Week 1</span></div>
-	    <div class="col-md-3">Monday, Sept. 23</div>
-	    <div class="col-md-8"><a href="handouts/week-1-logistics.pdf"><img src="images/pdf.png"> Stuff you should know about CS144</a></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">Wednesday, Sept. 25</div>
-	    <div class="col-md-8"><a href="handouts/week-1-how-the-internet-works.pptx"><img src="images/ppt.png"></a> <a href="handouts/week-1-how-the-internet-works.pdf"><img src="images/pdf.png"> How the Internet works</a></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">Friday, Sept. 27</div>
-	    <div class="col-md-8"><a href="handouts/week-1-reliability.pdf"><img src="images/pdf.png"> Reliability</a></div>
-	    <div class="col-md-1"><span class="label label-default">Week 2</span></div>
-	    <div class="col-md-3">Wednesday, Oct. 2</div>
-	    <div class="col-md-8"><a href="handouts/week-2-tcp.pdf"><img src="images/pdf.png"> TCP</a></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">Friday, Oct. 4</div>
-        <div class="col-md-8"><a href="handouts/wireshark_exercise.pdf"><img src="images/pdf.png"> Wireshark Exercise</a> <a href="handouts/wireshark_exercise_pcaps.zip"><img src="images/wireshark.png"> pcap files</a> <a href="handouts/wireshark_exercise_answers.pdf"><img src="images/pdf.png"> Answers</a></div>
-        <div class="col-md-1"><span class="label label-default">Week 3</span></div>
-        <div class="col-md-3">Monday, Oct. 7</div>
-        <div class="col-md-8"><a href="handouts/week-3-packet-switching-1.pdf"><img src="images/pdf.png"> Packet Switching Part 1</a></div>
-        <div class="col-md-1"></div>
-            <div class="col-md-3">Wednesday, October 9</div>
-	    <div class="col-md-8"><a href="handouts/week-3-packet-switching-2.pptx"><img src="images/ppt.png"></a> <a href="handouts/week-3-packet-switching-2.pdf"><img src="images/pdf.png"> Packet Switching Part 2</a></div>
-        <div class="col-md-1"><span class="label label-default">Week 5</span></div>
-        <div class="col-md-3">Monday, Oct. 21</div>
-        <div class="col-md-8"><a href="handouts/week-5-routing_game_PUBLIC.pptx"><img src="images/ppt.png"></a> <a href="handouts/week-5-routing_game_PUBLIC.pdf"><img src="images/pdf.png"> Routing Game</a></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">Wednesday, October 23</div>
-        <div class="col-md-8"><a href="handouts/week-5-routing-in-the-internet.pptx"><img src="images/ppt.png"></a> <a href="handouts/week-5-routing-in-the-internet.pdf"><img src="images/pdf.png"> Routing in the Internet</a></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">Friday, October 25</div>
-        <div class="col-md-8"> <a href="handouts/week-5-nandita-guest-lecture.pdf"><img src="images/pdf.png"> Nandita Dukkipati Guest Lecture</a></div>
-
-        <div class="col-md-1"><span class="label label-default">Week 6</span></div>
-        <div class="col-md-3">Monday, October 28</div>
-        <div class="col-md-8"> <a href="handouts/week-6-applications.pdf"><img src="images/pdf.png"> Applications I (DHCP, DNS, TLS)</a></div>
-
-        <div class="col-md-1"><span class="label label-default">Week 7</span></div>
-        <div class="col-md-3">Monday, November 4</div>
-        <div class="col-md-8"> <a href="handouts/week-7-physical-layer.pptx"><img src="images/ppt.png"></a> <a href="handouts/week-7-physical-layer.pdf"><img src="images/pdf.png"> Physical Layer</a> (same slides for Wednesday Nov. 6)</div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">Friday, November 8</div>
-        <div class="col-md-8"> <a href="handouts/week-7-ethernet.pptx"><img src="images/ppt.png"></a><a href="handouts/week-7-ethernet.pdf"> <img src="images/pdf.png"> Ethernet</a></div>
-
-        <div class="col-md-1"><span class="label label-default">Week 8</span></div>
-        <div class="col-md-3">Friday, November 15</div>
-        <div class="col-md-8"> <a href="handouts/cs144_florance_2019_nov.pdf"> <img src="images/pdf.png"> Ken Florance (Netflix) Guest Lecture</a></div>
-
-        <div class="col-md-1"><span class="label label-default">Week 9</span></div>
-        <div class="col-md-3">Monday, November 18</div>
-        <div class="col-md-8"> <a href="handouts/week-9-disaggregation.pptx"><img src="images/ppt.png"></a> <a href="handouts/week-9-disaggregation.pdf"><img src="images/pdf.png"> Disaggregation</a></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">Wednesday, November 20</div>
-        <div class="col-md-8"> <a href="handouts/cs144_mogul_2019_nov.pdf"><img src="images/pdf.png"> Jeff Mogul (Google) Guest Lecture</a></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">Friday, November 22</div>
-        <div class="col-md-8"> <a href="handouts/omar_guest_lecture.pdf"><img src="images/pdf.png"> Omar Baldonado (Facebook) Guest Lecture</a></div>
-
-        <div class="col-md-1"><span class="label label-default">Week 10</span></div>
-        <div class="col-md-3">Wednesday, December 4</div>
-        <div class="col-md-8"> <a href="handouts/nick_final_review.pptx"><img src="images/ppt.png"></a> <a href="handouts/nick_final_review.pdf"><img src="images/pdf.png"> Nick M. Review</a></div>
-        <div class="col-md-1"></div>
-
-	  </div>
-	</div>
+      <div class="col-md-6">
+        <p>Michael Rau
+          <br><span class="text-muted">Email:</span> <span class="cem" data-x="mjrau" data-y="stanford" data-z="edu"></p>
       </div>
+      
+    </div>
+  </div>
 
-      <div class="row">
-	<div class="page-header">
-	  <h3>Schedule</h3>
-	</div>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">Assignments &amp; Grading</h3>
+    </div>
+    <div class="panel-body">
+      This is a project-based class; students will work in a group on a single project, or series of smaller related projects, over the course of the term. Groups will draft a design document early in the term and will revise it as their approach (and understanding of the problem they have chosen to tackle) necessarily evolves. Students will be evaluated based on their design document, their participation in class, demonstrations of intermediate milestones to the rest of the class, and a final report on the project. Students will not be evaluated based on their success at landing pull requests in the production codebase. There will not be an exam.
+    </div>
+  </div>
 
-	<div class="col-md-12">
-	  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=czNxM2IyNm44bGliYjJsaGdlNjFoZnZwYzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%233F51B5&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-	</div>
-      </div>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">Learning Goals</h3>
+    </div>
+    <div class="panel-body">
+      <ol>
+        <li>Develop skill and maturity in software development (with deadlines) to meet the needs of a winter-term theatrical production. Learn fundamentals of robust failure-tolerant modular software design, code review, pull requests, and how to make progress when reading error messages and core dumps.</li>
+
+        <li>Learn the basics of video compression, audio compression and applied signal processing, their practical tradeoffs in a real-time setting, and how to interface with them as a software developer.</li>
+
+        <li>Learn practical protocol development for real-time IP networking under latency constraints.</li>
+
+        <li>Develop the grasshopper on your shoulder to tell you when you should ask for help, and how to elicit it from relevant experts (both technical and creative).</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">Possible Group Projects</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li>Measure the impulse response of a Stanford auditorium, then implement a real-time audio filter to make our actors feel like they are in the same space auditorily.</li>
+        
+        <li>Extract the chroma-key module from Blender and wrap it in simple C++ code, then demonstrate that it’s possible to composite two separate video feeds (each of one actor filmed in front of a green screen) into a single video that makes it look like the two actors are in the same room and are making believable eye contact with each other.</li>
+        
+        <li>Develop a real-time waveform monitor and color-correction controls for live video in the Y’CbCr colorspace, and demonstrate that these are the right controls to produce aesthetically pleasing results.</li>
+        
+        <li>Develop software that allows an actor to hold up a color-correction card (with known gray and color swatches) in front of a USB webcam, detects the location of each patch, then adjusts the webcam’s settings to auto-correct the exposure and colors.</li>
+        
+        <li>Measure statistics of an Internet connection (patterns of loss, of jitter/queueing under different stimuli), then design a protocol to achieve low-latency data transfer over an uncertain network.</li>
+        
+        <li>Take a C++ video compression codebase and optimize it to run reliably at 24 fps (sacrificing quality if necessary).</li>
+        
+        <li>Implement software to interface with lights controlled over DMX512-over-RJ45.</li>
+        
+        <li>Build a system to monitor equipment in the field (metrics about local computation timing and network communication) and flag anomalies/alerts.</li>
+        
+        <li>Create an HTML/JS frontend and C++ backend for the audience to watch a play over WebRTC and approximate the feeling of “being there live,” by giving actors and other audience members real-time feedback (e.g. the sound of audience laughter captured from audience microphones).</li>
+        
+        <li>We will happily consider other proposals for group projects.</li>
+      </ul>
+    </div>
+  </div>
 
       <script src="js/bootstrap.min.js"></script>
       <script src="js/smartquotes.js"></script>
       <script>smartquotes()</script>
       <script>
-	document.getElementById("classprogress").style.width = 100 * ((new Date().getTime() - 1569274200000) / 6400200000) + "%";
+  document.getElementById("classprogress").style.width = 100 * ((new Date().getTime() - 1600084800000) / 6400200000) + "%";
       </script>
   </body>
 </html>
